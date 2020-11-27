@@ -1,0 +1,17 @@
+# The code for showing apple on Newton
+frame_size 540 960
+show title.png 0 20 0.8 180 30
+show scenery.png 20 150 0.216 0 0
+show tree.png 30 150 0.08 10 300
+show apple.png 35 100 0.1 150 400
+show apple.png 35 150 0.1 120 350
+show apple.png 40 150 0.1 110 650
+show apple.png 45 150 0.1 70 450
+show apple.png 50 150 0.1 150 500
+show apple.png 55 150 0.1 190 600
+show apple.png 60 150 0.1 80 550
+# This is a comment
+move newton.png 60 100 0.2 300 0 300 380
+show newton.png 100 150 0.2 300 380
+move apple.png 100 150 0.1 150 400 290 400
+show apple.png 149 150 0.1 290 400
