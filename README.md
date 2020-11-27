@@ -70,11 +70,14 @@ To compile your code -
           outfile_path - The path and name of the output **.avi** file to be created
 
     For example - 
-    python3 compiler.py code.flip --resource_dir resources --output video.avi
+    python3 compiler.py sample_code.flip --resource_dir resources --output sample_video.avi
 
 This creates a video .avi file with given name.
 Runs at 15 FPS
 
+## Sample
+[The sample source code](sample_code.flip)
+[The sample rendered video of Newton](bin/sample_video.avi)
 
 ## Extensibility
 
