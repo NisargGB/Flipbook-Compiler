@@ -3,13 +3,13 @@
 This is a prototype language design and it's compiler to render flipbook videos froma set of source images
 The language specifications, syntax and features are as follows - 
 
-# # Introduction
+## Introduction
 
 A flip book is a book with a series of pictures that vary gradually from one page to the next, so that when the pages are turned rapidly the pictures appear to animate by simulating motion or some other change. A user designing a flipbook probably doesn't want to specify eah of the individual frame and it's components. Rather, they would wish to specify the range of frames where an object should be displayed or moved about across the frames to simulate motion. To make the best use of this language, users must use transparent png images to display objects in their flipbook.
 
 The videos are rendered at 15 FPS.
 
-# # How to code a flipbook
+## How to code a flipbook
 
 (Refer code.flip for a sample code)
 The code is written in a .flip file and each new command is in a different line.
@@ -56,7 +56,7 @@ For the purpose of this project and a POC, we experiment with  3 basic commands 
         Note: This command will not affect any existing or future object. It rather brings in the object, moves it and then removes it from subsequent frames. To make it presist, user has to use the 'show' command after the move period.
 
 
-# # Compiler specifications
+## Compiler specifications
 
 Use Python 3
 Required libraries: numpy, opencv, argparse
@@ -75,7 +75,7 @@ This creates a video .avi file with given name.
 Runs at 15 FPS
 
 
-# # Extensibility
+## Extensibility
 
 There is a lot of scope to expand the capapbilities of this language. Some suggestions are as follows -
 1. Image rotation can be done along with Image scaling
