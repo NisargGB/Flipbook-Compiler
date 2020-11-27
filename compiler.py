@@ -250,3 +250,5 @@ if __name__ == "__main__":
     magic = Compiler(resource_dir=resource_dir)
     magic.parse_code(codef)
     magic.render_video(outf)
+
+    print("Compilation done!")
