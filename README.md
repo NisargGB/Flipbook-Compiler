@@ -74,7 +74,7 @@ To compile your code -
     outfile_path - The path and name of the output **.avi** file to be created  
   
 For example -  
-    
+
     $python3 compiler.py sample_code.flip --resource_dir resources --output sample_video.avi  
 
 This creates a video .avi file with given name.
@@ -86,7 +86,7 @@ Runs at 15 FPS
 
 ## Extensibility
 
-There is a lot of scope to expand the capapbilities of this language. Some suggestions are as follows -
-1. Image rotation can be done along with Image scaling
+There is a lot of scope to expand the capabilities of this language. Some suggestions are as follows -
+1. Image rotation can be done along with Image scaling.
 2. More complex motion commands can be introduced for object movements. For example, circular motion can be introduced by specifying radius and angle of revolution.
 3. Image processing commands can be introduced - Like changing contrast, brigtness, etc.
