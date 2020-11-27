@@ -11,7 +11,7 @@ The videos are rendered at 15 FPS.
 
 ## How to code a flipbook
 
-(Refer code.flip for a sample code)
+(Refer sample_code.flip for a sample code)
 The code is written in a .flip file and each new command is in a different line.
 Comments are specified by starting the line with '#'.
 A line can either be comment or a command, not both.
@@ -56,7 +56,7 @@ For the purpose of this project and a POC, we experiment with  3 basic commands 
         end_top_offset - Ending Vertical distance between top left corner of object image and upper edge of frame  
         end_right_offset - Ending Horizontal distance between top left corner of object image and left edge of frame  
 
-    **Note**: This command will not affect any existing or future object. It rather brings in the object, moves it and then removes it from subsequent frames. To make it presist, user has to use the 'show' command after the move period.  
+    **Note**: This command will not affect any existing or future object. It rather brings in the object, moves it and then removes it from subsequent frames. To preserve the objct after motion, user has to use the 'show' command after the move period.  
 
 
 ## Compiler specifications
@@ -73,7 +73,7 @@ To compile your code -
     res_dir_path - The path to the directory containing source images required for rendering video  
     outfile_path - The path and name of the output **.avi** file to be created  
 
-    For example -   
+For example -   
     $python3 compiler.py sample_code.flip --resource_dir resources --output sample_video.avi  
 
 This creates a video .avi file with given name.
