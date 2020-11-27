@@ -62,7 +62,8 @@ Use Python 3
 Required libraries: numpy, opencv, argparse
 
 To compile your code - 
-    python3 compiler.py <yourcode.flip> --resource_dir <res_dir_path> --output <outfile_path>
+    
+    $python3 compiler.py <yourcode.flip> --resource_dir <res_dir_path> --output <outfile_path>
 
     Args: yourcode.flip - The path to the .flip code file to be compiled
           res_dir_path - The path to the directory containing source images required for rendering video
