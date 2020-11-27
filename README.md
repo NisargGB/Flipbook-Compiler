@@ -22,7 +22,7 @@ For the purpose of this project and a POC, we experiment with  3 basic commands 
     
     Task: Sets the dimensions of the final video to be rendered.
 
-    Args: Height - Integer specifying the height of the final video
+    Args:   Height - Integer specifying the height of the final video
             Width  - Integer specifying the width of the final video
     
     Note: This command can be ignored, and default video frame size of (512, 512) will be chosen. If not ignored this command must be the **first non-comment line** in the file.
@@ -32,7 +32,7 @@ For the purpose of this project and a POC, we experiment with  3 basic commands 
 
     Taks: Displays an image in frames from [start_frame, end_frame)
 
-    Args: image_path - The path to the image that is to be placed in the flipbook. Should be relative to the resource directory given
+    Args:   image_path - The path to the image that is to be placed in the flipbook. Should be relative to the resource directory given
             start_frame - The starting frame number (starting from 0) from which the image has to be displayed
             end_frame - The ending frame number (not included) till which image should be displayed
             scale - The factor by which the image of the object should e scaled before displaying it
@@ -44,7 +44,7 @@ For the purpose of this project and a POC, we experiment with  3 basic commands 
 
     Taks: Displays and moves an image in frames from [start_frame, end_frame) from start to end position specified by the offsets. Follows a straight line motion between the given positions. The speed of the obct will be calculated by the distance to be travelled and the number of frames ssigned for the motion.
 
-    Args: image_path - The path to the image that is to be placed in the flipbook. Should be relative to the resource directory given
+    Args:   image_path - The path to the image that is to be placed in the flipbook. Should be relative to the resource directory given
             start_frame - The starting frame number (starting from 0) from which the image has to be displayed
             end_frame - The ending frame number (not included) till which image should be displayed
             scale - The factor by which the image of the object should e scaled before displaying it
