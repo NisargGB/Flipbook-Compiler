@@ -72,8 +72,9 @@ To compile your code -
     yourcode.flip - The path to the .flip code file to be compiled  
     res_dir_path - The path to the directory containing source images required for rendering video  
     outfile_path - The path and name of the output **.avi** file to be created  
-
-For example -   
+  
+For example -  
+    
     $python3 compiler.py sample_code.flip --resource_dir resources --output sample_video.avi  
 
 This creates a video .avi file with given name.
