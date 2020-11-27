@@ -18,12 +18,13 @@ A line can either be comment or a command, not both.
 
 For the purpose of this project and a POC, we experiment with  3 basic commands in the language - 
 
-1. **frame_size** <height> <width>
+1. **frame_size** <frame_height> <frame_width>
     
     **Task**: Sets the dimensions of the final video to be rendered.
 
-    **Args**:   height - Integer specifying the height of the final video
-            width  - Integer specifying the width of the final video
+    **Args**:
+        frame_height - Integer specifying the height of the final video
+        frame_width  - Integer specifying the width of the final video
     
     **Note**: This command can be ignored, and default video frame size of (512, 512) will be chosen. If not ignored this command must be the **first non-comment line** in the file.
 
@@ -32,26 +33,28 @@ For the purpose of this project and a POC, we experiment with  3 basic commands 
 
     **Task**: Displays an image in frames from [start_frame, end_frame)
 
-    **Args**:   image_path - Path to the image that is to be placed in the flipbook. Should be relative to the resource directory given
-            start_frame - The starting frame number (starting from 0) from which the image has to be displayed
-            end_frame - The ending frame number (not included) till which image should be displayed
-            scale - The factor by which the image of the object should e scaled before displaying it
-            top_offset - Vertical distance between top left corner of object image and upper edge of frame
-            right_offset - Horizontal distance between top left corner of object image and left edge of frame
+    **Args**:
+        image_path - Path to the image that is to be placed in the flipbook. Should be relative to the resource directory given
+        start_frame - The starting frame number (starting from 0) from which the image has to be displayed
+        end_frame - The ending frame number (not included) till which image should be displayed
+        scale - The factor by which the image of the object should e scaled before displaying it
+        top_offset - Vertical distance between top left corner of object image and upper edge of frame
+        right_offset - Horizontal distance between top left corner of object image and left edge of frame
 
     
 3. **move** <image_path> <start_frame> <end_frame> <scale> <start_top_offset> <start_right_offset> <end_top_offset> <end_right_offset>
 
     **Task**: Displays and moves an image in frames from [start_frame, end_frame) from start to end position specified by the offsets. Follows a straight line motion between the given positions. The speed of the obct will be calculated by the distance to be travelled and the number of frames ssigned for the motion.
 
-    **Args**:   image_path - The path to the image that is to be placed in the flipbook. Should be relative to the resource directory given
-            start_frame - The starting frame number (starting from 0) from which the image has to be displayed
-            end_frame - The ending frame number (not included) till which image should be displayed
-            scale - The factor by which the image of the object should e scaled before displaying it
-            start_top_offset - Starting Vertical distance between top left corner of object image and upper edge of frame
-            start_right_offset - starting Horizontal distance between top left corner of object image and left edge of frame
-            end_top_offset - Ending Vertical distance between top left corner of object image and upper edge of frame
-            end_right_offset - Ending Horizontal distance between top left corner of object image and left edge of frame
+    **Args**:
+        image_path - The path to the image that is to be placed in the flipbook. Should be relative to the resource directory given
+        start_frame - The starting frame number (starting from 0) from which the image has to be displayed
+        end_frame - The ending frame number (not included) till which image should be displayed
+        scale - The factor by which the image of the object should e scaled before displaying it
+        start_top_offset - Starting Vertical distance between top left corner of object image and upper edge of frame
+        start_right_offset - starting Horizontal distance between top left corner of object image and left edge of frame
+        end_top_offset - Ending Vertical distance between top left corner of object image and upper edge of frame
+        end_right_offset - Ending Horizontal distance between top left corner of object image and left edge of frame
 
     **Note**: This command will not affect any existing or future object. It rather brings in the object, moves it and then removes it from subsequent frames. To make it presist, user has to use the 'show' command after the move period.
 
