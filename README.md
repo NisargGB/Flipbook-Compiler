@@ -18,7 +18,7 @@ A line can either be comment or a command, not both.
 
 For the purpose of this project and a POC, we experiment with  3 basic commands in the language - 
 
-1. **frame_size <height> <width>**
+1. **frame_size** <height> <width>
     
     **Task**: Sets the dimensions of the final video to be rendered.
 
@@ -28,7 +28,7 @@ For the purpose of this project and a POC, we experiment with  3 basic commands 
     **Note**: This command can be ignored, and default video frame size of (512, 512) will be chosen. If not ignored this command must be the **first non-comment line** in the file.
 
     
-2. **show <image_path> <start_frame> <end_frame> <scale> <top_offset> <right_offset>**
+2. **show** <image_path> <start_frame> <end_frame> <scale> <top_offset> <right_offset>
 
     **Task**: Displays an image in frames from [start_frame, end_frame)
 
@@ -40,7 +40,7 @@ For the purpose of this project and a POC, we experiment with  3 basic commands 
             right_offset - Horizontal distance between top left corner of object image and left edge of frame
 
     
-3. **move <image_path> <start_frame> <end_frame> <scale> <start_top_offset> <start_right_offset> <end_top_offset> <end_right_offset>**
+3. **move** <image_path> <start_frame> <end_frame> <scale> <start_top_offset> <start_right_offset> <end_top_offset> <end_right_offset>
 
     **Task**: Displays and moves an image in frames from [start_frame, end_frame) from start to end position specified by the offsets. Follows a straight line motion between the given positions. The speed of the obct will be calculated by the distance to be travelled and the number of frames ssigned for the motion.
 
